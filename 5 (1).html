@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Чайный путь</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="flex-header">
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>Чайный путь</span>
+        </div>
+        <nav class="flex-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-phone">
+            <i class="fas fa-phone-alt"></i>
+            <span>+7 (999) 123-45-67</span>
+        </div>
+    </header>
+
+    <main class="contacts-main">
+        
+        <div class="contact-card">
+            <div class="card-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <h2>Дмитрий Монахов</h2>
+            <p class="specialization">🍵 Чайный эксперт & коллекционер</p>
+            <p class="group-info"><i class="fas fa-users"></i> Студент группы 1ИП6</p>
+            
+            <div class="contact-details">
+                <div class="detail-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:dm.monakhov@tea-way.ru">dm.monakhov@tea-way.ru</a>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Москва, Россия</span>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <h3><i class="fas fa-share-alt"></i> Социальные сети</h3>
+                <div class="social-icons flex-social">
+                    <a href="#" class="social-icon telegram"><i class="fab fa-telegram"></i><span>Telegram</span></a>
+                    <a href="#" class="social-icon vk"><i class="fab fa-vk"></i><span>VK</span></a>
+                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback-form">
+            <h2><i class="fas fa-paper-plane"></i> Написать мне</h2>
+            <form id="contactForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Ваше имя <span class="required-star">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required-star">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="ivan@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Тема сообщения</label>
+                    <select id="topic" name="topic">
+                        <option value="question">Вопрос о чае</option>
+                        <option value="collab">Сотрудничество</option>
+                        <option value="feedback">Отзыв о сайте</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение <span class="required-star">*</span></label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Напишите ваше сообщение..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Я согласен на обработку персональных данных <span class="required-star">*</span></label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Отправить сообщение
+                </button>
+            </form>
+            <div id="formStatus"></div>
+        </div>
+
+        <div class="advantages-section">
+            <h2><i class="fas fa-star"></i> Почему выбирают меня</h2>
+            <div class="advantages-flex">
+                <div class="advantage-card">
+                    <i class="fas fa-trophy"></i>
+                    <h4>10+ лет опыта</h4>
+                    <p>Изучаю китайский чай с 2014 года</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-china-tea"></i>
+                    <h4>Прямые поставки</h4>
+                    <p>Чай из провинций Юньнань, Фуцзянь, Аньхой</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>Поддержка 24/7</h4>
+                    <p>Отвечаю на вопросы о чае в любое время</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-sidebar flex-info">
+            <div class="work-schedule">
+                <h3><i class="fas fa-clock"></i> График ответов</h3>
+                <ul class="schedule-list">
+                    <li>ПН - ПТ: <span>10:00 – 19:00</span></li>
+                    <li>СБ: <span>11:00 – 16:00</span></li>
+                    <li>ВС: <span>выходной</span></li>
+                </ul>
+                <p class="response-note"><i class="fas fa-reply-all"></i> Отвечаю в течение 24 часов</p>
+            </div>
+
+            <div class="faq-block">
+                <h3><i class="fas fa-question-circle"></i> FAQ</h3>
+                <div class="faq-item">
+                    <div class="faq-question">Как правильно заваривать пуэр?</div>
+                    <div class="faq-answer">Пуэр заваривают водой 95-100°C. Первый пролив сливают, далее 20-30 секунд.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Где купить настоящий китайский чай?</div>
+                    <div class="faq-answer">Напишите мне — поделюсь проверенными продавцами.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Как хранить чай?</div>
+                    <div class="faq-answer">В герметичной таре, в сухом прохладном месте.</div>
+                </div>
+            </div>
+
+            <div class="instruction">
+                <h3><i class="fas fa-info-circle"></i> Как связаться</h3>
+                <ol>
+                    <li>Заполните форму выше</li>
+                    <li>Укажите корректный email</li>
+                    <li>Опишите ваш вопрос</li>
+                    <li>Я отвечу в ближайшее время</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="reviews-section">
+            <h2><i class="fas fa-comments"></i> Отзывы</h2>
+            <div class="reviews-flex">
+                <div class="review-card">
+                    <i class="fas fa-user-circle"></i>
+                    <p class="review-text">"Отличная консультация по выбору чая! Дмитрий помог разобраться в сортах пуэра."</p>
+                    <p class="review-author">— Екатерина С.</p>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-user-circle"></i>
+                    <p class="review-text">"Быстрая обратная связь. Рекомендую всем, кто хочет узнать больше о китайской чайной культуре."</p>
+                    <p class="review-author">— Алексей К.</p>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-user-circle"></i>
+                    <p class="review-text">"Профессионал своего дела. Приятно иметь дело с человеком, который живёт своим делом."</p>
+                    <p class="review-author">— Мария Д.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="contacts-footer">
+        <p>© 2026 Дмитрий Монахов, студент группы 1ИП6. Чайный путь — искусство китайского чая</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const consent = document.getElementById('consent').checked;
+            
+            if (!name || !email || !message || !consent) {
+                document.getElementById('formStatus').innerHTML = '<div class="status-error">❌ Пожалуйста, заполните все обязательные поля</div>';
+                return;
+            }
+            document.getElementById('formStatus').innerHTML = '<div class="status-success">✅ Спасибо! Ваше сообщение отправлено.</div>';
+            this.reset();
+            setTimeout(() => document.getElementById('formStatus').innerHTML = '', 3000);
+        });
+    </script>
+</body>
+</html>

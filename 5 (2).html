@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Чайный путь</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="flex-header">
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>Чайный путь</span>
+        </div>
+        <nav class="flex-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-phone">
+            <i class="fas fa-phone-alt"></i>
+            <span>+7 (999) 123-45-67</span>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i>
+                    Изображений: <span id="image-counter">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    Всего лайков: <span id="total-likes">0</span>
+                </span>
+            </div>
+            <div class="view-controls">
+                <button id="grid-view" class="view-btn active"><i class="fas fa-th"></i> Сетка</button>
+                <button id="list-view" class="view-btn"><i class="fas fa-list"></i> Список</button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <h3><i class="fas fa-filter"></i> Фильтры:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="tea">🍃 Чай</button>
+                <button class="filter-btn" data-filter="ceremony">🍵 Церемония</button>
+                <button class="filter-btn" data-filter="nature">🏔️ Природа</button>
+            </div>
+        </div>
+
+        <div class="gallery-grid" id="image-gallery"></div>
+
+        <aside class="gallery-info">
+            <h3><i class="fas fa-lightbulb"></i> Интересный факт</h3>
+            <p>Самый дорогой чай в мире — китайский улун «Те Гуань Инь» (Железная Бодхисаттва). Некоторые его сорта могут стоить до 1500 долларов за 500 граммов!</p>
+        </aside>
+    </main>
+
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <p>© 2026 Дмитрий Монахов, студент группы 1ИП6. Все права защищены.</p>
+            <p class="js-status"><i class="fas fa-check-circle"></i> JavaScript активен</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
